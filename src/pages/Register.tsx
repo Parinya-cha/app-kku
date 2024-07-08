@@ -17,7 +17,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleRegister = async () => { };
+  const handleRegister = async () => {};
 
   return (
     <>
