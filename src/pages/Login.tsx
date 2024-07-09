@@ -1,4 +1,4 @@
-import { LockOutlined } from "@mui/icons-material";
+import { LockOutlined, LoginTwoTone } from "@mui/icons-material";
 import {
   Container,
   CssBaseline,
@@ -31,7 +31,7 @@ const Login = () => {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "primary.light" }}>
-            <LockOutlined />
+            <LoginTwoTone />
           </Avatar>
           <Typography variant="h5">Login</Typography>
           <Box sx={{ mt: 1 }}>
@@ -64,14 +64,15 @@ const Login = () => {
             <Button
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 2 ,backgroundColor : "#4CAF50", color : "white" , "&:hover": {backgroundColor: "#45a049"}}
+             }
               onClick={handleLogin}
             >
               Login
             </Button>
             <Grid container justifyContent={"flex-end"}>
               <Grid item>
-                <Link to="/register">Don't have an account? Register</Link>
+                <Link to="/register">Register</Link>
               </Grid>
             </Grid>
           </Box>

@@ -29,10 +29,11 @@ const Register = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            //color: "text.primary",
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "primary.light" }}>
-            <LockOutlined />
+          <img src="/path/to/your/image.jpg" alt="Avatar" style={{ width: '100%' }} /> {/* ใช้รูปภาพ */}
           </Avatar>
           <Typography variant="h5">Register</Typography>
           <Box sx={{ mt: 3 }}>
@@ -77,14 +78,15 @@ const Register = () => {
             <Button
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 2, backgroundColor: '#c04000', color: 'white', '&:hover': {backgroundColor: '#c04000', color: 'white'
+              }}}
               onClick={handleRegister}
             >
               Register
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link to="/login">Already have an account? Login</Link>
+                <Link to="/login">login</Link>
               </Grid>
             </Grid>
           </Box>
