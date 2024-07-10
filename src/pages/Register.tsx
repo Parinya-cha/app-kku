@@ -10,14 +10,20 @@ import {
 } from "@mui/material";
 import { LockOutlined } from "@mui/icons-material";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
+import {Form, Alert,} from 'react-bootstrap';
 
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [error, setError] = useState("");
+  useNavigate();
+  
+  let navigate = useNavigate();
+  
   const handleRegister = async () => {};
+
 
   return (
     <>
@@ -33,7 +39,7 @@ const Register = () => {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "primary.light" }}>
-          <img src="/path/to/your/image.jpg" alt="Avatar" style={{ width: '100%' }} /> {/* ใช้รูปภาพ */}
+          <img src="\icon\kku_logo_th\th\LogoKKU tha Traci.png" alt="Avatar" style={{ width: '100%' }} /> {/* ใช้รูปภาพ */}
           </Avatar>
           <Typography variant="h5">Register</Typography>
           <Box sx={{ mt: 3 }}>
@@ -78,7 +84,7 @@ const Register = () => {
             <Button
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2, backgroundColor: '#c04000', color: 'white', '&:hover': {backgroundColor: '#c04000', color: 'white'
+              sx={{ mt: 5, mb: 10, backgroundColor: '#c04000', color: 'white', '&:hover': {backgroundColor: '#c04000', color: 'white'
               }}}
               onClick={handleRegister}
             >
